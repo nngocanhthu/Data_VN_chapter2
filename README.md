@@ -35,11 +35,9 @@ data/
         └── VHLSS data.dta
 ```
 
-**Lưu ý quan trọng đối với VARHS:** tên các thư mục con (`2012_new`, `2014_new`, `2016_new`, `panel_1216/middle_steps`) và tên các file (`Q2_New_12.dta`, `panelid.dta`, …) phải **chính xác như trên** do code STATA tham chiếu trực tiếp đến các tên này. Hai thư mục `panel_1216/` và `panel_1216/middle_steps/` cần được tạo sẵn (kể cả khi đang rỗng) vì code sẽ ghi các file tạm vào đó.
+**Lưu ý quan trọng đối với VARHS:** tên các thư mục con (`2012_new`, `2014_new`, `2016_new`, `panel_1216/middle_steps`) phải **chính xác như trên** do code STATA tham chiếu trực tiếp đến các tên này. Hai thư mục `panel_1216/` và `panel_1216/middle_steps/` cần được tạo sẵn (kể cả khi đang rỗng) vì code sẽ ghi các file tạm vào đó.
 
 Nếu cấu trúc thư mục được sắp xếp khác đi, độc giả vẫn sẽ chạy được code nếu điều chỉnh các đường dẫn `use "..."`, `save "..."` và `merge ... using "..."` trong file `.do`/notebook cho khớp.
-
-```
 
 Độc giả có thể dùng tính năng **Find & Replace** (Ctrl+H) trong Stata Do-file Editor / VS Code / Jupyter để đổi một lượt tất cả các đường dẫn.
 
