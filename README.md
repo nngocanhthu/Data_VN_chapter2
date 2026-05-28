@@ -1,6 +1,6 @@
 # Code thực hành Chương 2 - Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế
 
-Repository này lưu **code STATA** đi kèm với chương 2 trong quyển sách *Xây dựng dữ liệu bảng và phương pháp giả bảng từ dữ liệu chéo lặp lại: ứng dụng trong các bộ dữ liệu cấp hộ gia đình tại Việt Nam* (VARHS và VHLSS).
+Repository này lưu **code STATA** đi kèm với chương 2 trong quyển sách *Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế*.
 
 Các câu lệnh được trình bày dưới hai dạng:
 
