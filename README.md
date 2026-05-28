@@ -1,6 +1,6 @@
 # Code thực hành Chương 2 - Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế
 
-Repository này lưu **code STATA** và **dữ liệu** đi kèm với chương 2 trong quyển sách *Xây dựng dữ liệu bảng và phương pháp giả bảng từ dữ liệu chéo lặp lại: ứng dụng trong các bộ dữ liệu cấp hộ gia đình tại Việt Nam* (VARHS và VHLSS).
+Repository này lưu **code STATA** đi kèm với chương 2 trong quyển sách *Xây dựng dữ liệu bảng và phương pháp giả bảng từ dữ liệu chéo lặp lại: ứng dụng trong các bộ dữ liệu cấp hộ gia đình tại Việt Nam* (VARHS và VHLSS).
 
 Các câu lệnh được trình bày dưới hai dạng:
 
@@ -10,26 +10,35 @@ Các câu lệnh được trình bày dưới hai dạng:
 
 ---
 
-## ⚠️ Lưu ý khi chạy các file: Cần đổi đường dẫn vào thư mục chứa dữ liệu (`cd`) trước khi chạy
+## ⚠️ Lưu ý khi chạy các file: Cần đổi đường dẫn vào thư mục chứa dữ liệu VARHS (`cd`) trước khi chạy
 
-Tất cả các file `.do` và notebook đều dùng đường dẫn cục bộ của tác giả gốc:
+Do dung lượng lớn và điều khoản bản quyền, **dữ liệu không được lưu trong repository này**. Độc giả cần tự tải dữ liệu từ nguồn gốc (xem mục [Nguồn dữ liệu](#nguồn-dữ-liệu) ở cuối file này) và sắp xếp **đúng cấu trúc thư mục** như bên dưới.
 
-```stata
-cd "D:\Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế\VARHS\..."
+```
+data/
+    ├── VARHS/
+    │   └── 2008-16Clean/
+    │       ├── 2012_new/
+    │       │   ├── Q2_New_12.dta
+    │       │   └── Q8_New_12.dta
+    │       ├── 2014_new/
+    │       │   ├── Q1_New_14.dta
+    │       │   ├── Q2_New_14.dta
+    │       │   └── Q8_New_14.dta
+    │       ├── 2016_new/
+    │       │   ├── Q2_New_16.dta
+    │       │   └── Q8_New_16.dta
+    │       ├── panel_1216/
+    │       │   └── middle_steps/       ← tạo sẵn thư mục rỗng này
+    │       └── panelid.dta
+    └── VHLSS/
+        └── VHLSS data.dta
 ```
 
-**Trên các máy tính khác, để chạy được đoạn code và cho ra kết quả giống với trong sách, độc giả cần thay các dòng sau `cd "..."` thành đường dẫn tới thư mục `data/` trong thư mục đã tải về.
+**Lưu ý quan trọng đối với VARHS:** tên các thư mục con (`2012_new`, `2014_new`, `2016_new`, `panel_1216/middle_steps`) và tên các file (`Q2_New_12.dta`, `panelid.dta`, …) phải **chính xác như trên** do code STATA tham chiếu trực tiếp đến các tên này. Hai thư mục `panel_1216/` và `panel_1216/middle_steps/` cần được tạo sẵn (kể cả khi đang rỗng) vì code sẽ ghi các file tạm vào đó.
 
-Ví dụ, nếu thư mục dữ liệu được lưu vào `C:\Users\vn-data\panel-data-book`, cần đổi:
+Nếu cấu trúc thư mục được sắp xếp khác đi, độc giả vẫn sẽ chạy được code nếu điều chỉnh các đường dẫn `use "..."`, `save "..."` và `merge ... using "..."` trong file `.do`/notebook cho khớp.
 
-```stata
-cd "D:\Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế\VARHS\2008-16Clean\2014_new"
-```
-
-thành:
-
-```stata
-cd "C:\Users\vn-data\panel-data-book\data\VARHS\2008-16Clean\2014_new"
 ```
 
 Độc giả có thể dùng tính năng **Find & Replace** (Ctrl+H) trong Stata Do-file Editor / VS Code / Jupyter để đổi một lượt tất cả các đường dẫn.
