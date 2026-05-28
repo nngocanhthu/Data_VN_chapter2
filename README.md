@@ -18,7 +18,7 @@ Tất cả các file `.do` và notebook đều dùng đường dẫn cục bộ 
 cd "D:\Một số phương pháp hiện đại xử lý và phân tích dữ liệu kinh tế\VARHS\..."
 ```
 
-**Trên các máy tính khác, để chạy được đoạn code và cho ra kết quả giống với trong sách, cần thay các dòng sau `cd "..."` thành đường dẫn tới thư mục `data/` trong repo bạn đã clone về.
+**Trên các máy tính khác, để chạy được đoạn code và cho ra kết quả giống với trong sách, độc giả cần thay các dòng sau `cd "..."` thành đường dẫn tới thư mục `data/` trong thư mục đã tải về.
 
 Ví dụ, nếu thư mục dữ liệu được lưu vào `C:\Users\vn-data\panel-data-book`, cần đổi:
 
@@ -40,9 +40,9 @@ cd "C:\Users\vn-data\panel-data-book\data\VARHS\2008-16Clean\2014_new"
 
 ### Chạy file `.do` bằng Stata
 
-1. Tải toàn bộ thư mục dữ liệu (data) về máy và giữ nguyên cấu trúc hiện tại.
-2. Sửa các đường dẫn sau từ khóa `cd` trong file `.do` như hướng dẫn ở trên.
-3. Chạy file `.do` trong Stata.
+1. Tải toàn bộ thư mục dữ liệu (data) về máy và giữ nguyên cấu trúc hiện tại
+2. Sửa các đường dẫn sau từ khóa `cd` trong file `.do` như hướng dẫn ở trên
+3. Chạy file `.do` trong Stata
 
 ### Chạy bằng Jupyter notebook
 
@@ -55,8 +55,8 @@ python -m stata_kernel.install
 
 Sau đó:
 
-1. Sửa các ô `cd` trong notebook như hướng dẫn ở trên.
-2. Chạy notebook bằng local host hoặc IDE.
+1. Sửa các ô `cd` trong notebook như hướng dẫn ở trên
+2. Chạy notebook bằng local host hoặc IDE
 
 > **Lưu ý:** `stata_kernel` cần Stata đã cài sẵn trên máy.
 
@@ -64,5 +64,5 @@ Sau đó:
 
 ## Nguồn dữ liệu
 
-- **VARHS** — Vietnam Access to Resources Household Survey, 2008–2016. CIEM, MOLISA, MPI, UNU-WIDER, University of Copenhagen, DANIDA. Dữ liệu được UNU-WIDER công bố tại [wider.unu.edu/database/viet-nam-data](https://www.wider.unu.edu/database/viet-nam-data).
-- Bộ dữ liệu tái lập của Nguyen, Le và Nguyen (2021) được xây dựng từ VHLSS- Vietnam Household Living Standards Survey. Để dùng dữ liệu VHLSS gốc, vui lòng liên hệ trực tiếp Tổng Cục Thống Kê.
+- **VARHS** hay Vietnam Access to Resources Household Survey 2008–2016 được UNU-WIDER công bố tại [wider.unu.edu/database/viet-nam-data](https://www.wider.unu.edu/database/viet-nam-data).
+- Bộ dữ liệu tái lập của [Nguyen, Le và Nguyen (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0260415) được xây dựng từ VHLSS hay Vietnam Household Living Standards Survey. Để dùng dữ liệu VHLSS gốc, vui lòng liên hệ trực tiếp Tổng Cục Thống Kê.
