@@ -4,8 +4,8 @@ Repository này lưu **code STATA** và **dữ liệu** đi kèm với chương 
 
 Các câu lệnh được trình bày dưới hai dạng:
 
-- **`notebooks/Chương 2 - Xây dựng dữ liệu bảng và giả bảng.ipynb`** — Jupyter notebook chạy bằng **stata_kernel**, hiển thị code và output cạnh nhau có thể đọc trực tiếp trên GitHub.
-- **`do_files/*.do`** — bốn file Stata `.do` gốc, dành cho người muốn chạy thẳng trong Stata.
+- **`notebooks/Chương 2 - Xây dựng dữ liệu bảng và giả bảng.ipynb`** - Jupyter notebook chạy bằng **stata_kernel**, hiển thị code và output cạnh nhau có thể đọc trực tiếp trên GitHub.
+- **`do_files/*.do`** - bốn file Stata `.do` gốc, dành cho người muốn chạy thẳng trong Stata.
 
 
 ---
